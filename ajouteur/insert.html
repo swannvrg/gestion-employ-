@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-secondary p-5 row">
+    <form action="./traitement.php" method="post" class="form container mt-4 p-5 dp-flex text-center bg-light rounded col-10 col-sm-10 col-md-8 col-lg-6 col-xxl-4 " >
+            
+            <label for="name">Nom :   </label><br> <input type="text"  id="nom" name="nom" placeholder="Dupont" required><br><br>
+            <label for="prenom">Prenom :   </label><br> <input type="text" id="prenom" name="prenom" placeholder="Jean" required><br><br>
+            <label for="matricule">Matricule :   </label><br><input type="number"id="matricule" name="matricule" placeholder="000" required><br><br>
+            <label for="code">Code Cadre :   </label><br><input type="number" name="code" placeholder="0" required><br><br>
+            <ul style="list-style: none;">
+                <li><label for="champService">Service Employé :</label>
+                    <select name="service" id="champService">
+                    <option value="s04">Administration</option>
+                    <option value="s03">Commercial</option>
+                    <option value="s02">Emballage</option>
+                    <option value="s01">Fabrication</option>
+                    </select>
+                </li><br>
+                
+            </ul>
+        
+        <button type="submit" class="btn btn-primary mt-2">Envoyer</button>
+        <a href="../index.php" class="btn btn-warning mt-2">Menu Principal</a>
+    </form>
+</body>
+</html>
